@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nss-Jam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./images/jskfavicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.instagram.com/nsstkmce/#" target="blank">
+      <img src="./images/download-removebg.png" width="30" height="30" alt="">
+    </a>
+    <a class="navbar-brand" href="#">NSS TKMCE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+      </ul>
+      <span class="navbar-text">
+        <img src="./images/title.png" width="50" height="30" alt="">
+      </span>
+    </div>
+  </nav>
+
+  <!-- main-container -->
+  <div class="container">
+
+    <div class="titles">
+      <h3>Select one option</h3>
+    </div>
+
+    <!-- row-1 -->
+    <div class="row-1">
+
+      <!-- card 1 -->
+      <div id="child-1" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-1','child-1',1)">
+        <h3>1</h3>
+      </div>
+
+      <!--card 1 on-click-->
+      <div id="child-on-click-1" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-1','child-on-click-1')">
+        <h6></h6>
+      </div>
+      <!-- card 2 -->
+      <div id="child-2" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-2','child-2',2)">
+        <h3>2</h3>
+      </div>
+
+      <!--card 2 on-click-->
+      <div id="child-on-click-2" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-2','child-on-click-2')">
+        <h6></h6>
+      </div>
+
+      <!-- card 3 -->
+      <div id="child-3" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-3','child-3',3)">
+        <h3>3</h3>
+      </div>
+      <!--card 3 on-click-->
+      <div id="child-on-click-3" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-3','child-on-click-3')">
+        <h6></h6>
+      </div>
+
+      <!-- card 4 -->
+      <div id="child-4" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-4','child-4',4)">
+        <h3>4</h3>
+      </div>
+      <!--card 4 on-click-->
+      <div id="child-on-click-4" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-4','child-on-click-4')">
+        <h6></h6>
+      </div>
+
+      <!-- card 5 -->
+      <div id="child-5" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-5','child-5',5)">
+        <h3>5</h3>
+      </div>
+      <!--card 5 on-click-->
+      <div id="child-on-click-5" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-5','child-on-click-5')">
+        <h6></h6>
+      </div>
+
+      <!-- card 6 -->
+      <div id="child-6" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3"
+        onclick="toggleDiv('child-on-click-6','child-6',6)">
+        <h3>6</h3>
+      </div>
+      <!--card 6 on-click-->
+      <div id="child-on-click-6" class="child col-xs-4 col-sm-4 col-md-4 col-xl-3" style="display: none;"
+        onclick="toggleDivBack('child-6','child-on-click-6')">
+        <h6></h6>
+      </div>
+
+    </div>
+
+    <!-- row-2 -->
+    <div id="row-2-a">
+      <button type="button" class="btn btn-primary" onclick="shuffle(),toggleBtn('a','row-2-a')">Shuffle</button>
+    </div>
+  </div>
+  <div id="row-2-b">
+    <button type="button" id="a" class="btn btn-success" onclick="shuffle(),toggleBtnBack('row-2-a','a')"
+      style="display: none;"></button>
+  </div>
+  </div>
+
+  <!-- vacant -->
+  <div class="vacant"></div>
+  <!-- Footer -->
+  <div class="footer"></div>
+  <!-- bs-js -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
