@@ -1,9 +1,11 @@
 :root {
-    --margin-child:1%;
+    --margin-child:var(--border-radius);
     --margin-right:12%;
-    --base-color:#000000;
+    --base-color:rgb(77, 144, 189);
     --margin-list:20%;
     --border-width:2px;
+    --border-radius:3%;
+    --child-color:rgb(77, 144, 189);
 }
 
 .titles{
@@ -56,7 +58,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-1:hover{
@@ -64,13 +66,13 @@
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color:var(--child-color);
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
-    border-style: groove;
-    border-width: var(--border-width);  
-    border-radius: 1%;
+    border-style: groove;  
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
 }
 #child-2{
     display:flex;
@@ -81,21 +83,22 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: 1px;
-    border-width: var(--border-width);;
+    border-width: var(--border-width);
     background-color: white;
+    border-radius: var(--border-radius);
 }
 #child-2:hover{
     display:flex;
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color: var(--child-color);;
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
 }
 #child-3{
     display:flex;
@@ -106,7 +109,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-3:hover{
@@ -114,13 +117,13 @@
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color: var(--child-color);;
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
 }
 #child-4{
     display:flex;
@@ -131,7 +134,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-4:hover{
@@ -139,13 +142,13 @@
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color: var(--child-color);;
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
 }
 #child-5{
     display:flex;
@@ -156,7 +159,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-5:hover{
@@ -164,13 +167,13 @@
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color: var(--child-color);;
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
 }
 #child-6{
     display:flex;
@@ -181,7 +184,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-6:hover{
@@ -189,13 +192,13 @@
     justify-content: center;
     align-items: center;
     height: 175px;
-    background-color: #5084c9;
+    background-color: var(--child-color);;
     color:rgb(255, 255, 255);
     cursor:pointer;
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
 }
 #child-on-click-1{
     display:flex;
@@ -206,7 +209,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-on-click-2{
@@ -218,7 +221,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 #child-on-click-3{
@@ -230,7 +233,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 
 }
@@ -243,7 +246,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 
 }
@@ -256,7 +259,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 
 }
@@ -269,7 +272,7 @@
     margin: var(--margin-child);
     border-style: groove;
     border-width: var(--border-width);
-    border-radius: 1%;
+    border-radius: var(--border-radius);
     background-color: white;
 }
 
